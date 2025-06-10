@@ -15,7 +15,7 @@
     <!-- Start header -->
     <header class="fixed h-16 top-0 left-0 right-0 flex items-center p-4 bg-[#121212]">
         <div class="container relative flex items-center justify-between mx-auto">
-            <div class="text-2xl font-bold text-white">Uni Stream</div>
+            <div class="text-3xl font-bold text-white">Uni Stream</div>
             <div>
                 <!-- Start đã loggin -->
                 <div class="flex items-center gap-5">
@@ -180,7 +180,65 @@
                                 </label>
                             </div>
                             <ul class="flex flex-col gap-4 py-2 ml-2 mr-8 text-lg">
-                                <li class="cursor-pointer hover:opacity-75">Đăng ký phiên live</li>
+                                <li>
+                                    <input type="checkbox" id="modal_live" class="hidden peer/modal_live">
+                                    <label class="cursor-pointer hover:opacity-75" for="modal_live">Đăng ký phiên
+                                        live</label>
+                                    <!-- Start modal đăng kí phiên live -->
+                                    <div
+                                        class="fixed inset-0 z-20 items-center justify-center hidden mx-auto text-white bg-black/30 backdrop-blur-sm peer-checked/modal_live:flex">
+                                        <div
+                                            class="bg-[#121212] w-[800px] h-[450px] rounded-xl outline outline-2 outline-[#383838]">
+                                            <div class="flex justify-end bg-black">
+                                                <label for="modal_live"
+                                                    class="p-4 text-xl text-white cursor-pointer hover:opacity-75">
+                                                    <i class="fa-solid fa-xmark"></i>
+                                                </label>
+                                            </div>
+                                            <h1 class="px-5 py-4 text-2xl font-medium">Đăng ký phiên
+                                                live
+                                            </h1>
+                                            <div class="grid grid-cols-2 gap-5 px-5 py-3">
+                                                <div class="flex flex-col gap-4">
+                                                    <div
+                                                        class="flex items-center justify-center w-full overflow-hidden bg-black rounded-xl aspect-video">
+                                                        <img src="../assets/W-01/login2.jpg" alt="thumbnail">
+                                                    </div>
+                                                    <label for="live_thumbnail"
+                                                        class="text-white bg-[#222222] py-2 px-5 font-semibold rounded-xl hover:opacity-75 w-32 text-center cursor-pointer transition-all duration-200 text-lg">Chọn
+                                                        ảnh</label>
+                                                    <input type="file" id="live_thumbnail" class="hidden">
+                                                </div>
+                                                <div class="flex flex-col gap-4">
+                                                    <div class="flex flex-col gap-2">
+                                                        <label for="modal_live_title"
+                                                            class="text-xl font-medium text-white">Tiêu đề</label>
+                                                        <input
+                                                            class="px-5 py-4 bg-[#222222] rounded-xl transition-all duration-200 outline outline-2 outline-transparent focus:outline-white"
+                                                            type="text" id="modal_live_title"
+                                                            placeholder="Nhập tiêu đề...">
+                                                    </div>
+                                                    <div class="flex flex-col gap-2">
+                                                        <label for="modal_live_date"
+                                                            class="text-lg font-medium text-white">Chọn thời
+                                                            gian</label>
+                                                        <input
+                                                            class="px-5 py-4 bg-[#222222] rounded-xl transition-all duration-200 outline outline-2 outline-transparent focus:outline-transparent"
+                                                            type="datetime-local" id="modal_live_date">
+                                                    </div>
+                                                    <div class="flex justify-end w-full gap-4">
+                                                        <button
+                                                            class="text-white bg-[#222222] py-2 px-5 font-semibold rounded-xl hover:opacity-75 min-w-24 text-center cursor-pointer transition-all duration-200 text-lg">Hủy</button>
+                                                        <button
+                                                            class="text-white bg-[#222222] py-2 px-5 font-semibold rounded-xl hover:opacity-75 min-w-24 text-center cursor-pointer transition-all duration-200 text-lg">Xác
+                                                            nhận</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- End model đăng kí phiên live -->
+                                </li>
                                 <li class="cursor-pointer hover:opacity-75">Cập nhật thông tin</li>
                             </ul>
                         </div>
@@ -189,7 +247,8 @@
                 <!-- End đã loggin -->
 
                 <!-- Start chưa loggin -->
-                <!-- <button class="text-white bg-[#222222] py-2 px-5 font-semibold rounded-xl hover:opacity-75">Đăng
+                <!-- <button
+                    class="text-white bg-[#222222] py-2 px-5 font-semibold rounded-xl hover:opacity-75 transition-all duration-200">Đăng
                     nhập</button> -->
                 <!-- End chưa loggin -->
             </div>
