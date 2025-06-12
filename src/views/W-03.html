@@ -305,22 +305,22 @@
     <!-- Start content -->
     <div class="flex h-screen">
         <!-- Start list streaming -->
-        <div id="list-stream"
-            class="w-1/6 bg-[#272727] mt-16 overflow-y-scroll scrollbar-thumb-[#3e3e3e] scrollbar-track-transparent scrollbar">
+        <div class="w-1/6 bg-[#272727] mt-16" id="list-stream">
             <p class="p-5 text-xl font-medium text-center text-white">Khám phá thêm</p>
-            <ul class="flex flex-col gap-6">
-                <li class="flex flex-col flex-grow mx-4 cursor-pointer h-1/4">
+            <ul id="list-stream-video"
+                class="pl-3 pr-2 mr-1 flex flex-col gap-3 scrollbar-thumb-[#3e3e3e] scrollbar-track-transparent scrollbar overflow-y-scroll h-[90%]">
+                <li class="flex flex-col cursor-pointer">
                     <img src="../assets/W-03/list-stream-thumbnail.png"
-                        class="flex flex-grow object-cover overflow-hidden opacity-100 h-4/5 rounded-xl hover:opacity-60"
+                        class="flex object-cover overflow-hidden transition-all duration-200 opacity-100 rounded-xl hover:opacity-60 aspect-video"
                         alt="">
-                    <div class="flex mt-4 h-[15%]">
+                    <div class="flex mt-4 h-[15%] items-center">
                         <img src="../assets/W-02/avatar.jpg" class="rounded-full size-10" alt="">
                         <div class="flex flex-col justify-center flex-grow ml-2 text-white">
                             <div class="flex items-center justify-between w-full text-base font-medium">
                                 <p>feyd153</p>
-                                <div class="flex items-center space-x-1">
+                                <div class="flex items-center gap-1 space-x-1">
                                     <p class="text-sm">0:37:29</p>
-                                    <div class="flex px-2 bg-red-500 rounded-md">
+                                    <div class="flex px-2 bg-red-500">
                                         <p>LIVE</p>
                                     </div>
                                 </div>
@@ -329,18 +329,18 @@
                         </div>
                     </div>
                 </li>
-                <li class="flex flex-col flex-grow mx-4 cursor-pointer h-1/4">
+                <li class="flex flex-col cursor-pointer">
                     <img src="../assets/W-03/list-stream-thumbnail.png"
-                        class="flex flex-grow object-cover overflow-hidden opacity-100 h-4/5 rounded-xl hover:opacity-60"
+                        class="flex object-cover overflow-hidden transition-all duration-200 opacity-100 rounded-xl hover:opacity-60 aspect-video"
                         alt="">
-                    <div class="flex mt-4 h-[15%]">
+                    <div class="flex mt-4 h-[15%] items-center">
                         <img src="../assets/W-02/avatar.jpg" class="rounded-full size-10" alt="">
                         <div class="flex flex-col justify-center flex-grow ml-2 text-white">
                             <div class="flex items-center justify-between w-full text-base font-medium">
                                 <p>feyd153</p>
-                                <div class="flex items-center space-x-1">
+                                <div class="flex items-center gap-1 space-x-1">
                                     <p class="text-sm">0:37:29</p>
-                                    <div class="flex px-2 bg-red-500 rounded-md">
+                                    <div class="flex px-2 bg-red-500">
                                         <p>LIVE</p>
                                     </div>
                                 </div>
@@ -349,18 +349,18 @@
                         </div>
                     </div>
                 </li>
-                <li class="flex flex-col flex-grow mx-4 cursor-pointer h-1/4">
+                <li class="flex flex-col cursor-pointer">
                     <img src="../assets/W-03/list-stream-thumbnail.png"
-                        class="flex flex-grow object-cover overflow-hidden opacity-100 h-4/5 rounded-xl hover:opacity-60"
+                        class="flex object-cover overflow-hidden transition-all duration-200 opacity-100 rounded-xl hover:opacity-60 aspect-video"
                         alt="">
-                    <div class="flex mt-4 h-[15%]">
+                    <div class="flex mt-4 h-[15%] items-center">
                         <img src="../assets/W-02/avatar.jpg" class="rounded-full size-10" alt="">
                         <div class="flex flex-col justify-center flex-grow ml-2 text-white">
                             <div class="flex items-center justify-between w-full text-base font-medium">
                                 <p>feyd153</p>
-                                <div class="flex items-center space-x-1">
+                                <div class="flex items-center gap-1 space-x-1">
                                     <p class="text-sm">0:37:29</p>
-                                    <div class="flex px-2 bg-red-500 rounded-md">
+                                    <div class="flex px-2 bg-red-500">
                                         <p>LIVE</p>
                                     </div>
                                 </div>
@@ -369,18 +369,18 @@
                         </div>
                     </div>
                 </li>
-                <li class="flex flex-col flex-grow mx-4 cursor-pointer h-1/4">
+                <li class="flex flex-col cursor-pointer">
                     <img src="../assets/W-03/list-stream-thumbnail.png"
-                        class="flex flex-grow object-cover overflow-hidden opacity-100 h-4/5 rounded-xl hover:opacity-60"
+                        class="flex object-cover overflow-hidden transition-all duration-200 opacity-100 rounded-xl hover:opacity-60 aspect-video"
                         alt="">
-                    <div class="flex mt-4 h-[15%]">
+                    <div class="flex mt-4 h-[15%] items-center">
                         <img src="../assets/W-02/avatar.jpg" class="rounded-full size-10" alt="">
                         <div class="flex flex-col justify-center flex-grow ml-2 text-white">
                             <div class="flex items-center justify-between w-full text-base font-medium">
                                 <p>feyd153</p>
-                                <div class="flex items-center space-x-1">
+                                <div class="flex items-center gap-1 space-x-1">
                                     <p class="text-sm">0:37:29</p>
-                                    <div class="flex px-2 bg-red-500 rounded-md">
+                                    <div class="flex px-2 bg-red-500">
                                         <p>LIVE</p>
                                     </div>
                                 </div>
@@ -389,18 +389,118 @@
                         </div>
                     </div>
                 </li>
-                <li class="flex flex-col flex-grow mx-4 cursor-pointer h-1/4">
+                <li class="flex flex-col cursor-pointer">
                     <img src="../assets/W-03/list-stream-thumbnail.png"
-                        class="flex flex-grow object-cover overflow-hidden opacity-100 h-4/5 rounded-xl hover:opacity-60"
+                        class="flex object-cover overflow-hidden transition-all duration-200 opacity-100 rounded-xl hover:opacity-60 aspect-video"
                         alt="">
-                    <div class="flex mt-4 h-[15%]">
+                    <div class="flex mt-4 h-[15%] items-center">
                         <img src="../assets/W-02/avatar.jpg" class="rounded-full size-10" alt="">
                         <div class="flex flex-col justify-center flex-grow ml-2 text-white">
                             <div class="flex items-center justify-between w-full text-base font-medium">
                                 <p>feyd153</p>
-                                <div class="flex items-center space-x-1">
+                                <div class="flex items-center gap-1 space-x-1">
                                     <p class="text-sm">0:37:29</p>
-                                    <div class="flex px-2 bg-red-500 rounded-md">
+                                    <div class="flex px-2 bg-red-500">
+                                        <p>LIVE</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-1 text-sm">Vẽ cùng tuiii</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="flex flex-col cursor-pointer">
+                    <img src="../assets/W-03/list-stream-thumbnail.png"
+                        class="flex object-cover overflow-hidden transition-all duration-200 opacity-100 rounded-xl hover:opacity-60 aspect-video"
+                        alt="">
+                    <div class="flex mt-4 h-[15%] items-center">
+                        <img src="../assets/W-02/avatar.jpg" class="rounded-full size-10" alt="">
+                        <div class="flex flex-col justify-center flex-grow ml-2 text-white">
+                            <div class="flex items-center justify-between w-full text-base font-medium">
+                                <p>feyd153</p>
+                                <div class="flex items-center gap-1 space-x-1">
+                                    <p class="text-sm">0:37:29</p>
+                                    <div class="flex px-2 bg-red-500">
+                                        <p>LIVE</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-1 text-sm">Vẽ cùng tuiii</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="flex flex-col cursor-pointer">
+                    <img src="../assets/W-03/list-stream-thumbnail.png"
+                        class="flex object-cover overflow-hidden transition-all duration-200 opacity-100 rounded-xl hover:opacity-60 aspect-video"
+                        alt="">
+                    <div class="flex mt-4 h-[15%] items-center">
+                        <img src="../assets/W-02/avatar.jpg" class="rounded-full size-10" alt="">
+                        <div class="flex flex-col justify-center flex-grow ml-2 text-white">
+                            <div class="flex items-center justify-between w-full text-base font-medium">
+                                <p>feyd153</p>
+                                <div class="flex items-center gap-1 space-x-1">
+                                    <p class="text-sm">0:37:29</p>
+                                    <div class="flex px-2 bg-red-500">
+                                        <p>LIVE</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-1 text-sm">Vẽ cùng tuiii</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="flex flex-col cursor-pointer">
+                    <img src="../assets/W-03/list-stream-thumbnail.png"
+                        class="flex object-cover overflow-hidden transition-all duration-200 opacity-100 rounded-xl hover:opacity-60 aspect-video"
+                        alt="">
+                    <div class="flex mt-4 h-[15%] items-center">
+                        <img src="../assets/W-02/avatar.jpg" class="rounded-full size-10" alt="">
+                        <div class="flex flex-col justify-center flex-grow ml-2 text-white">
+                            <div class="flex items-center justify-between w-full text-base font-medium">
+                                <p>feyd153</p>
+                                <div class="flex items-center gap-1 space-x-1">
+                                    <p class="text-sm">0:37:29</p>
+                                    <div class="flex px-2 bg-red-500">
+                                        <p>LIVE</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-1 text-sm">Vẽ cùng tuiii</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="flex flex-col cursor-pointer">
+                    <img src="../assets/W-03/list-stream-thumbnail.png"
+                        class="flex object-cover overflow-hidden transition-all duration-200 opacity-100 rounded-xl hover:opacity-60 aspect-video"
+                        alt="">
+                    <div class="flex mt-4 h-[15%] items-center">
+                        <img src="../assets/W-02/avatar.jpg" class="rounded-full size-10" alt="">
+                        <div class="flex flex-col justify-center flex-grow ml-2 text-white">
+                            <div class="flex items-center justify-between w-full text-base font-medium">
+                                <p>feyd153</p>
+                                <div class="flex items-center gap-1 space-x-1">
+                                    <p class="text-sm">0:37:29</p>
+                                    <div class="flex px-2 bg-red-500">
+                                        <p>LIVE</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="mt-1 text-sm">Vẽ cùng tuiii</p>
+                        </div>
+                    </div>
+                </li>
+                <li class="flex flex-col cursor-pointer">
+                    <img src="../assets/W-03/list-stream-thumbnail.png"
+                        class="flex object-cover overflow-hidden transition-all duration-200 opacity-100 rounded-xl hover:opacity-60 aspect-video"
+                        alt="">
+                    <div class="flex mt-4 h-[15%] items-center">
+                        <img src="../assets/W-02/avatar.jpg" class="rounded-full size-10" alt="">
+                        <div class="flex flex-col justify-center flex-grow ml-2 text-white">
+                            <div class="flex items-center justify-between w-full text-base font-medium">
+                                <p>feyd153</p>
+                                <div class="flex items-center gap-1 space-x-1">
+                                    <p class="text-sm">0:37:29</p>
+                                    <div class="flex px-2 bg-red-500">
                                         <p>LIVE</p>
                                     </div>
                                 </div>
@@ -414,8 +514,132 @@
         <!-- End list streaming -->
 
         <!-- Start streaming frame -->
-        <div id="stream-frame" class="flex-grow mt-16 bg-black">
-            <p class="text-center text-white">Stream frame</p>
+        <div class="flex flex-col flex-grow mt-16 bg-black">
+            <div class="flex flex-row justify-between flex-grow h-[10%] mx-6 items-center content-center">
+                <div id="author-infor" class="flex gap-1">
+                    <img src="../assets/W-02/avatar.jpg" class="rounded-full size-12" alt="">
+                    <div class="flex flex-col justify-center flex-grow ml-2 text-white">
+                        <div id="author-name" class="flex items-center justify-between w-full text-base font-medium">
+                            <p>feyd153</p>
+                        </div>
+                        <p id="stream-caption" class="mt-1 text-sm">Vẽ cùng tuiii</p>
+                    </div>
+                    <!-- Start chưa follow -->
+                    <button id="follow-btn" class="px-2 ml-2 text-white bg-red-700 rounded-md hover:bg-red-500">
+                        <i class="fa-solid fa-plus"></i> Follow
+                    </button>
+                    <!-- End chưa follow -->
+
+                    <!-- Start đã follow -->
+                    <!-- <div class="content-center px-2 ml-2 text-2xl text-green-500">
+                        <i class="fa-regular fa-circle-check"></i>
+                    </div> -->
+                    <!-- End chưa follow -->
+                </div>
+
+                <div id="stream-time" class="flex items-center content-center gap-2 text-xl text-white">
+                    <i class="fa-regular fa-clock"></i> 1:32:54
+                </div>
+
+                <div class="flex gap-5 text-2xl text-white">
+                    <!-- Start report component -->
+                    <input type="checkbox" id="modal-report" class="hidden peer/modal-report">
+                    <label for="modal-report">
+                        <i class="fa-regular fa-flag hover:text-red-500 hover:cursor-pointer"></i>
+                    </label>
+                    <div
+                        class="fixed inset-0 z-20 items-center justify-center hidden mx-auto text-white bg-black/30 backdrop-blur-sm peer-checked/modal-report:flex">
+                        <div
+                            class="bg-[#121212] w-[600px]  rounded-xl outline outline-2 outline-[#383838] text-white overflow-hidden">
+                            <div class="flex justify-end bg-black">
+                                <label for="modal-report"
+                                    class="p-4 text-xl text-white cursor-pointer hover:opacity-75">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </label>
+                            </div>
+                            <div class="flex flex-col gap-6 px-6 py-5">
+                                <h1 class="w-full text-2xl font-bold text-center text-white">Báo cáo phiên live</h1>
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex flex-col gap-4">
+                                        <label for="modal-report"
+                                            class="text-xl font-medium text-white cursor-pointer">Mô tả vi phạm</label>
+                                        <input
+                                            class="px-5 py-4 bg-[#222222] rounded-xl transition-all duration-200 outline outline-2 outline-transparent focus:outline-white"
+                                            type="text" id="modal-report"
+                                            placeholder="Hành vi bạo lực, ngôn từ xúc phạm,...">
+                                    </div>
+                                </div>
+                                <div class="flex justify-end w-full gap-4">
+                                    <label for="modal-report"
+                                        class="px-5 py-2 text-lg font-semibold text-center text-white transition-all duration-200 bg-red-500 cursor-pointer rounded-xl hover:opacity-75 min-w-24">Hủy</label>
+                                    <label for="modal-report"
+                                        class="text-white bg-[#222222] py-2 px-5 font-semibold rounded-xl hover:opacity-75 min-w-24 text-center cursor-pointer transition-all duration-200 text-lg">Xác
+                                        nhận</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End report component-->
+
+                    <!-- Start get stream infor -->
+                    <input type="checkbox" id="modal-stream-infor" class="hidden peer/modal-stream-infor">
+                    <label for="modal-stream-infor">
+                        <i class="fa-solid fa-circle-info hover:text-red-500 hover:cursor-pointer"></i>
+                    </label>
+                    <div
+                        class="fixed inset-0 z-20 items-center justify-center hidden mx-auto text-white bg-black/30 backdrop-blur-sm peer-checked/modal-stream-infor:flex">
+                        <div
+                            class="bg-[#121212] w-[600px]  rounded-xl outline outline-2 outline-[#383838] text-white overflow-hidden">
+                            <div class="flex justify-end bg-black">
+                                <label for="modal-stream-infor"
+                                    class="p-4 text-xl text-white cursor-pointer hover:opacity-75">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </label>
+                            </div>
+                            <div class="flex flex-col gap-6 px-6 py-5">
+                                <h1 class="w-full text-2xl font-bold text-center text-white">Thông tin phiên live</h1>
+                                <!-- Start phiên live của tôi -->
+                                <div class="flex flex-col gap-4">
+                                    <div class="flex flex-col gap-2">
+                                        <label for="modal-stream-infor"
+                                            class="ml-2 text-xl font-medium text-white">watch_url</label>
+                                        <p class="px-5 py-4 bg-[#222222] rounded-xl text-gray-300" type="text"
+                                            id="modal-stream-infor">watch_url</p>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <label for="modal-stream-infor"
+                                            class="ml-2 text-xl font-medium text-white">stream_url</label>
+                                        <p class="px-5 py-4 bg-[#222222] rounded-xl text-gray-300" type="text"
+                                            id="modal-stream-infor">stream_url</p>
+                                    </div>
+                                    <div class="flex flex-col gap-2">
+                                        <label for="modal-stream-infor"
+                                            class="ml-2 text-xl font-medium text-white">stream_key</label>
+                                        <p class="px-5 py-4 bg-[#222222] rounded-xl text-gray-300" type="text"
+                                            id="modal-stream-infor">stream_key</p>
+                                    </div>
+                                </div>
+                                <!-- End phiên live của tôi -->
+
+                                <!-- Start phiên live khác -->
+
+                                <!-- End phiên live khác -->
+                                <div class="flex justify-end w-full gap-4">
+                                    <label for="modal-stream-infor"
+                                        class="px-5 py-2 text-lg font-semibold text-center text-white transition-all duration-200 bg-red-500 cursor-pointer rounded-xl hover:opacity-75 min-w-24">Hủy</label>
+                                    <label for="modal-stream-infor"
+                                        class="text-white bg-[#222222] py-2 px-5 font-semibold rounded-xl hover:opacity-75 min-w-24 text-center cursor-pointer transition-all duration-200 text-lg">Xác
+                                        nhận</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End get stream infor -->
+                </div>
+            </div>
+
+            <iframe id="stream-frame" class="h-[90%] mb-5 mx-1 rounded-sm"
+                src="https://www.youtube.com/watch?v=gxW-eskb1Eo"></iframe>
         </div>
         <!-- End streaming frame -->
 
@@ -439,7 +663,8 @@
                             <img src="../assets/W-02/avatar.jpg" class="rounded-full size-6" alt="">
                             <p class="text-base font-medium text-gray-200">Nguyengoc</p>
                         </div>
-                        <p class="ml-8 text-base text-white">Combo 2 chiếc quần short kaki giá chỉ 115k,nhanh tay thì
+                        <p class="ml-8 text-base text-white">Combo 2 chiếc quần short kaki giá chỉ 115k,nhanh tay
+                            thì
                             còn chậm tay là hết cả nhà ơi</p>
                     </li>
                     <li class="flex flex-col mx-4">
@@ -454,7 +679,8 @@
                             <img src="../assets/W-02/avatar.jpg" class="rounded-full size-6" alt="">
                             <p class="text-base font-medium text-gray-200">Nguyengoc</p>
                         </div>
-                        <p class="ml-8 text-base text-white">Combo 2 chiếc quần short kaki giá chỉ 115k,nhanh tay thì
+                        <p class="ml-8 text-base text-white">Combo 2 chiếc quần short kaki giá chỉ 115k,nhanh tay
+                            thì
                             còn chậm tay là hết cả nhà ơi</p>
                     </li>
                     <li class="flex flex-col mx-4">
@@ -469,7 +695,8 @@
                             <img src="../assets/W-02/avatar.jpg" class="rounded-full size-6" alt="">
                             <p class="text-base font-medium text-gray-200">Nguyengoc</p>
                         </div>
-                        <p class="ml-8 text-base text-white">Combo 2 chiếc quần short kaki giá chỉ 115k,nhanh tay thì
+                        <p class="ml-8 text-base text-white">Combo 2 chiếc quần short kaki giá chỉ 115k,nhanh tay
+                            thì
                             còn chậm tay là hết cả nhà ơi</p>
                     </li>
                     <li class="flex flex-col mx-4">
@@ -484,7 +711,8 @@
                             <img src="../assets/W-02/avatar.jpg" class="rounded-full size-6" alt="">
                             <p class="text-base font-medium text-gray-200">Nguyengoc</p>
                         </div>
-                        <p class="ml-8 text-base text-white">Combo 2 chiếc quần short kaki giá chỉ 115k,nhanh tay thì
+                        <p class="ml-8 text-base text-white">Combo 2 chiếc quần short kaki giá chỉ 115k,nhanh tay
+                            thì
                             còn chậm tay là hết cả nhà ơi</p>
                     </li>
                     <li class="flex flex-col mx-4">
@@ -499,12 +727,13 @@
                             <img src="../assets/W-02/avatar.jpg" class="rounded-full size-6" alt="">
                             <p class="text-base font-medium text-gray-200">Nguyengoc</p>
                         </div>
-                        <p class="ml-8 text-base text-white">Combo 2 chiếc quần short kaki giá chỉ 115k,nhanh tay thì
+                        <p class="ml-8 text-base text-white">Combo 2 chiếc quần short kaki giá chỉ 115k,nhanh tay
+                            thì
                             còn chậm tay là hết cả nhà ơi</p>
                     </li>
                 </ul>
             </div>
-            <div id="comment-box" class="flex flex-col h-[10%] mx-5 py-2 gap-2">
+            <div class="flex flex-col h-[10%] mx-5 py-2 gap-2">
                 <p class="text-white">
                     <i class="fa-solid fa-arrow-right-to-bracket"></i> FeyD153 đã tham gia
                 </p>
