@@ -516,16 +516,17 @@
         <!-- Start streaming frame -->
         <div class="flex flex-col flex-grow mt-16 bg-black">
             <div class="flex flex-row justify-between flex-grow h-[10%] mx-6 items-center content-center">
-                <div id="author-infor" class="flex gap-1">
+                <div id="author-infor" class="flex items-center gap-4">
                     <img src="../assets/W-02/avatar.jpg" class="rounded-full size-12" alt="">
-                    <div class="flex flex-col justify-center flex-grow ml-2 text-white">
+                    <div class="flex flex-col justify-center flex-grow text-white">
                         <div id="author-name" class="flex items-center justify-between w-full text-base font-medium">
                             <p>feyd153</p>
                         </div>
                         <p id="stream-caption" class="mt-1 text-sm">Vẽ cùng tuiii</p>
                     </div>
                     <!-- Start chưa follow -->
-                    <button id="follow-btn" class="px-2 ml-2 text-white bg-red-700 rounded-md hover:bg-red-500">
+                    <button id="follow-btn"
+                        class="h-10 px-5 text-white transition-all duration-200 bg-red-700 rounded-md hover:opacity-75">
                         <i class="fa-solid fa-plus"></i> Follow
                     </button>
                     <!-- End chưa follow -->
@@ -537,7 +538,7 @@
                     <!-- End chưa follow -->
                 </div>
 
-                <div id="stream-time" class="flex items-center content-center gap-2 text-xl text-white">
+                <div id="stream-time" class="fixed text-lg text-white right-[50%]">
                     <i class="fa-regular fa-clock"></i> 1:32:54
                 </div>
 
@@ -603,19 +604,19 @@
                                     <div class="flex flex-col gap-2">
                                         <label for="modal-stream-infor"
                                             class="ml-2 text-xl font-medium text-white">watch_url</label>
-                                        <p class="px-5 py-4 bg-[#222222] rounded-xl text-gray-300" type="text"
+                                        <p class="text-base px-5 py-4 bg-[#222222] rounded-xl text-gray-300" type="text"
                                             id="modal-stream-infor">watch_url</p>
                                     </div>
                                     <div class="flex flex-col gap-2">
                                         <label for="modal-stream-infor"
                                             class="ml-2 text-xl font-medium text-white">stream_url</label>
-                                        <p class="px-5 py-4 bg-[#222222] rounded-xl text-gray-300" type="text"
+                                        <p class="text-base px-5 py-4 bg-[#222222] rounded-xl text-gray-300" type="text"
                                             id="modal-stream-infor">stream_url</p>
                                     </div>
                                     <div class="flex flex-col gap-2">
                                         <label for="modal-stream-infor"
                                             class="ml-2 text-xl font-medium text-white">stream_key</label>
-                                        <p class="px-5 py-4 bg-[#222222] rounded-xl text-gray-300" type="text"
+                                        <p class="text-base px-5 py-4 bg-[#222222] rounded-xl text-gray-300" type="text"
                                             id="modal-stream-infor">stream_key</p>
                                     </div>
                                 </div>
@@ -733,7 +734,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="flex flex-col h-[10%] mx-5 py-2 gap-2">
+            <div class="flex flex-col h-[10%] px-5 py-2 gap-2 border-t-2 border-t-gray-500 border-opacity-50">
                 <p class="text-white">
                     <i class="fa-solid fa-arrow-right-to-bracket"></i> FeyD153 đã tham gia
                 </p>
@@ -741,7 +742,7 @@
                     <input id="comment-box" type="text"
                         class="px-3 py-3 w-full pl-4 bg-[#444444] rounded-xl transition-all  outline outline-2 outline-transparent focus:outline-white scrollbar-none text-white placeholder:text-gray-400 resize-none"
                         placeholder="Hãy nói gì đó">
-                    <div class="flex content-center text-xl text-white size-5">
+                    <div class="flex content-center text-xl text-white cursor-pointer size-5 hover:opacity-75">
                         <i class="fa-solid fa-paper-plane"></i>
                     </div>
                 </div>
